@@ -58,6 +58,9 @@
             text-align: center;
             box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.6);
             animation: slideIn 1s ease-out;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
         @keyframes slideIn {
@@ -72,9 +75,10 @@
         }
 
         .car img {
-            width: 100%;
+            width: 250px;
             height: auto;
             border-radius: 10px;
+            margin-left: 20px;
         }
 
         .car h2 {
@@ -88,6 +92,12 @@
             margin-top: 10px;
             color: #bbb;
         }
+
+        .car-details {
+            font-size: 1rem;
+            margin-top: 15px;
+            color: #ddd;
+        }
     </style>
 </head>
 <body>
@@ -95,20 +105,46 @@
     <!-- Fondo y contenedor de autos -->
     <div class="background">
         <div class="car-container">
+            <!-- GTR -->
             <div class="car">
-                <h2>GTR</h2>
+                <div>
+                    <h2>GTR</h2>
+                    <p>Un verdadero ícono de velocidad y tecnología japonesa. El Nissan GTR es conocido por su potencia y control.</p>
+                    <div class="car-details">
+                        <p><strong>Caballos de fuerza:</strong> 565 HP</p>
+                        <p><strong>Aceleración (0-100 km/h):</strong> 3.0 segundos</p>
+                        <p><strong>Velocidad máxima:</strong> 315 km/h</p>
+                    </div>
+                </div>
                 <img src="gtr.jpg" alt="GTR">
-                <p>Un verdadero ícono de velocidad y tecnología japonesa. El Nissan GTR es conocido por su potencia y control.</p>
             </div>
+
+            <!-- Honda -->
             <div class="car">
-                <h2>Honda</h2>
-                <img src="Honda.jpg" alt="Honda">
-                <p>El Honda Civic es uno de los autos más populares y versátiles del mundo. Ideal para tunear y llevar al siguiente nivel.</p>
+                <div>
+                    <h2>Honda Civic Type R</h2>
+                    <p>El Honda Civic es uno de los autos más populares y versátiles del mundo. Ideal para tunear y llevar al siguiente nivel.</p>
+                    <div class="car-details">
+                        <p><strong>Caballos de fuerza:</strong> 306 HP</p>
+                        <p><strong>Aceleración (0-100 km/h):</strong> 5.7 segundos</p>
+                        <p><strong>Velocidad máxima:</strong> 270 km/h</p>
+                    </div>
+                </div>
+                <img src="Honda.jpg" alt="Honda Civic Type R">
             </div>
+
+            <!-- Mitsubishi Evo -->
             <div class="car">
-                <h2>Mitsubishi Evo</h2>
-                <img src="evo.jpg" alt="Mitsubishi Evo">
-                <p>El Mitsubishi Evo es famoso por su rendimiento en rally. Con un motor potente y una tracción integral increíble.</p>
+                <div>
+                    <h2>Mitsubishi Evo X</h2>
+                    <p>El Mitsubishi Evo es famoso por su rendimiento en rally. Con un motor potente y una tracción integral increíble.</p>
+                    <div class="car-details">
+                        <p><strong>Caballos de fuerza:</strong> 291 HP</p>
+                        <p><strong>Aceleración (0-100 km/h):</strong> 5.0 segundos</p>
+                        <p><strong>Velocidad máxima:</strong> 250 km/h</p>
+                    </div>
+                </div>
+                <img src="evo.jpg" alt="Mitsubishi Evo X">
             </div>
         </div>
     </div>
