@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información - Mejores Autos JDM</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #121212;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        /* Animación de entrada */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            text-align: center;
+            animation: fadeIn 1s ease-out;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        p {
+            font-size: 1.3rem;
+            line-height: 1.8;
+            width: 80%;
+            max-width: 800px;
+            margin-top: 30px;
+            text-align: center;
+            animation: fadeIn 1.5s ease-out;
+            animation-delay: 0.5s;
+            opacity: 0;
+            animation-fill-mode: forwards;
+        }
+
+        .button {
+            margin-top: 40px;
+            padding: 15px 30px;
+            background-color: #333;
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 10px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s, background-color 0.3s;
+            animation: fadeIn 2s ease-out;
+            animation-delay: 1s;
+            opacity: 0;
+            animation-fill-mode: forwards;
+        }
+
+        .button:hover {
+            background-color: #555;
+            transform: scale(1.1);
+        }
+
+        .footer {
+            margin-top: 50px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-align: center;
+            color: #bbb;
+            animation: fadeIn 2s ease-out;
+            animation-delay: 1.5s;
+            opacity: 0;
+            animation-fill-mode: forwards;
+        }
+
+        .footer p {
+            color: #ccc;
+            font-size: 1.1rem;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Título -->
+    <h1>Información</h1>
+
+    <!-- Texto principal -->
+    <p>
+        Esta página fue creada por mí mientras dormía, y aunque suene loco, ¡aquí está! 
+        El mundo de los autos JDM nunca dejará de sorprendernos. Si estás aquí, es porque tienes un gusto único 
+        por estos autos legendarios. ¡Y te felicito por ello!
+    </p>
+
+    <!-- Botón para volver -->
+    <a href="index.html" class="button">Volver a la página principal</a>
+
+    <!-- Pie de página -->
+    <div class="footer">
+        <p>Creado por Nelson</p>
+    </div>
+
+</body>
+</html>
