@@ -13,20 +13,20 @@
 
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #121212;
             color: #fff;
             overflow-x: hidden;
         }
 
-        /* Estilo de fondo */
+        /* Fondo para la página de Mejores Autos JDM */
         .background {
-            background-image: url('Fondo1.jpg');
+            background-image: url('Fondo1.jpg'); /* Fondo actualizado a Fondo1.jpg */
             background-size: cover;
             background-position: center;
             height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column;
             animation: fadeIn 1s ease-out;
         }
 
@@ -44,124 +44,73 @@
 
         .car-container {
             display: flex;
-            justify-content: space-between;
-            width: 100%;
-            max-width: 1200px;
-            margin-top: 100px;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+        }
+
+        .car {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 15px;
+            margin: 20px 0;
+            width: 80%;
+            text-align: center;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.6);
             animation: slideIn 1s ease-out;
         }
 
         @keyframes slideIn {
             0% {
-                transform: translateX(-100%);
+                transform: translateY(-50%);
                 opacity: 0;
             }
             100% {
-                transform: translateX(0);
+                transform: translateY(0);
                 opacity: 1;
             }
         }
 
-        .car-info {
-            width: 60%;
-            padding: 20px;
-            background-color: rgba(0, 0, 0, 0.7);
+        .car img {
+            width: 100%;
+            height: auto;
             border-radius: 10px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-            text-align: left;
-            font-size: 1.2rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
         }
 
-        .car-info h2 {
+        .car h2 {
             font-size: 2rem;
-            margin-bottom: 20px;
+            margin-top: 15px;
             text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
         }
 
-        .car-info p {
-            margin-bottom: 20px;
-            line-height: 1.6;
+        .car p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            color: #bbb;
         }
-
-        .car-image {
-            width: 35%;
-            height: auto;
-            border-radius: 10px;
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
-        }
-
-        .next-car {
-            margin-top: 50px;
-            text-align: center;
-            animation: fadeIn 2s ease-out;
-        }
-
-        .next-car a {
-            padding: 15px 30px;
-            background-color: #333;
-            color: #fff;
-            font-size: 1.3rem;
-            font-weight: bold;
-            text-decoration: none;
-            border-radius: 10px;
-            transition: background-color 0.3s, transform 0.3s;
-        }
-
-        .next-car a:hover {
-            background-color: #555;
-            transform: scale(1.05);
-        }
-
     </style>
 </head>
 <body>
 
-    <!-- Sección 1 -->
+    <!-- Fondo y contenedor de autos -->
     <div class="background">
         <div class="car-container">
-            <div class="car-info">
-                <h2>Honda Civic Type R</h2>
-                <p>El Honda Civic Type R es uno de los autos más emblemáticos en el mundo JDM. Con su motor turboalimentado y su diseño agresivo, es uno de los favoritos de los entusiastas del tuning y el automovilismo.</p>
-                <p>Potencia: 306 hp</p>
-                <p>0-100 km/h: 5.7 segundos</p>
+            <div class="car">
+                <h2>GTR</h2>
+                <img src="gtr.jpg" alt="GTR">
+                <p>Un verdadero ícono de velocidad y tecnología japonesa. El Nissan GTR es conocido por su potencia y control.</p>
             </div>
-            <img src="honda_civic_type_r.jpg" alt="Honda Civic Type R" class="car-image">
-        </div>
-    </div>
-
-    <!-- Sección 2 -->
-    <div class="background">
-        <div class="car-container">
-            <div class="car-info">
-                <h2>Nissan Skyline GT-R</h2>
-                <p>El Nissan Skyline GT-R, conocido como el "Godzilla" de los autos japoneses, es una leyenda en el mundo de los autos JDM. Con una tracción integral y un motor RB26DETT, es una máquina de precisión.</p>
-                <p>Potencia: 280 hp</p>
-                <p>0-100 km/h: 5.6 segundos</p>
+            <div class="car">
+                <h2>Honda</h2>
+                <img src="Honda.jpg" alt="Honda">
+                <p>El Honda Civic es uno de los autos más populares y versátiles del mundo. Ideal para tunear y llevar al siguiente nivel.</p>
             </div>
-            <img src="nissan_skyline_gtr.jpg" alt="Nissan Skyline GT-R" class="car-image">
-        </div>
-    </div>
-
-    <!-- Sección 3 -->
-    <div class="background">
-        <div class="car-container">
-            <div class="car-info">
-                <h2>Mitsubishi Lancer Evolution VI</h2>
-                <p>El Mitsubishi Lancer Evolution VI es uno de los autos más legendarios en los rallys. Con un sistema de tracción total y un motor turboalimentado, ha dejado huella en el mundo del motorsport.</p>
-                <p>Potencia: 280 hp</p>
-                <p>0-100 km/h: 5.4 segundos</p>
+            <div class="car">
+                <h2>Mitsubishi Evo</h2>
+                <img src="evo.jpg" alt="Mitsubishi Evo">
+                <p>El Mitsubishi Evo es famoso por su rendimiento en rally. Con un motor potente y una tracción integral increíble.</p>
             </div>
-            <img src="mitsubishi_lancer_evolution_vi.jpg" alt="Mitsubishi Lancer Evolution VI" class="car-image">
         </div>
-    </div>
-
-    <!-- Agregar más autos aquí (se repite la misma estructura) -->
-
-    <div class="next-car">
-        <a href="#">Ver Más Autos</a>
     </div>
 
 </body>
